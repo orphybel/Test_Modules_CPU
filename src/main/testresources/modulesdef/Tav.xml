@@ -1,0 +1,51 @@
+<Module numero="X130379150" designation="SE-TVE-TAV-CPU Bloc Enfichable CPU" pathModelePv="../pv/tvetav.docx" type="Tav">
+    <DisqueSatas>
+        <DisqueSata nom="Disque SATA 1" lettre="a" numero="1"/>
+    </DisqueSatas>
+    <PortEthernets>
+        <PortEthernet nom="RJ45 J20 carte FDP" numero="1"/>
+        <PortEthernet nom="RJ45 en face avant" popUp="/images/ledsRJ45.jpg" text="LED verte allumée\n;LED jaune clignotante" numero="2"/>
+    </PortEthernets>
+    <EnssembleLeds>
+        <EnssembleLed nom="Leds Off" popUp="/images/led3.png" text="LED Signe de vie : Eteinte\n;LED Alarme : Eteinte\n;LED Caméra : Eteinte\nLED MemView : Allumée Verte ou éteinte"/>
+        <EnssembleLed nom="Leds rouges" popUp="/images/led2.jpg" text="LED Signe de vie : Allumée Verte\n;LED Alarme : Allumée Rouge\nLED Caméra : Allumée Rouge\n;LED MemView : Allumée rouge ou orange">
+            <Led nom="LED_HEARTBEAT"/>
+            <Led nom="LED_ALARME_ROUGE"/>
+            <Led nom="LED_CAMERA_ROUGE"/>
+            <Led nom="LED_ALARME_MSA"/>
+            <Led nom="LED_POWER_SEQ"/>
+        </EnssembleLed>
+        <EnssembleLed nom="Leds vertes" popUp="/images/led1.jpg" text="LED Signe de vie : Allumée Verte\n LED Alerte : Allumée Rouge\n LED Caméra : Allumée Rouge\n LED Alerte MSA : Allumée Rouge\n">
+            <Led nom="LED_ALARME_VERT"/>
+            <Led nom="LED_HEARTBEAT"/>
+            <Led nom="LED_CAMERA_VERT"/>
+            <Led nom="LED_POWER_SEQ"/>
+        </EnssembleLed>
+    </EnssembleLeds>
+    <EnssembleLedsAuto>
+        <EnssembleLedAuto nom="Led D1 et D4">
+            <Led nom="LED_POWER_SEQ"/>
+            <Led nom="CMD_POWER_RECORDER"/>
+        </EnssembleLedAuto>
+    </EnssembleLedsAuto>
+    <Switchs>
+        <!-- ATTENTION : les numéros sur les switchs on a la
+        fois une correspondance avec les modèles de pv mais également
+        avec des numéros dans un programme en c.
+         -->
+        <Switch nom="PRESENCE_V_BKP" numero="11"/>
+        <Switch nom="PRESENCE_12V_MSA" numero="8"/>
+        <Switch nom="PRESENCE_12V" numero="9"/>
+        <Switch nom="COM_ROT1_P1" numero="21"/>
+        <Switch nom="COM_ROT1_P2" numero="22"/>
+        <Switch nom="SEUIL_VIT" numero="24"/>
+        <Switch nom="CFG_MSA11_0" numero="1"/>
+        <Switch nom="CFG_MSA11_1" numero="0"/>
+        <Switch nom="BL_TRAIN" numero="5"/>
+        <Switch nom="RESERVE" numero="4"/>
+        <Switch nom="COUPLEMENT" numero="3"/>
+        <Switch nom="AUT_OP_DO" numero="2"/>
+        <Switch nom="AUT_OP_GA" numero="14"/>
+        <Switch nom="BL" numero="10"/>
+    </Switchs>
+</Module>

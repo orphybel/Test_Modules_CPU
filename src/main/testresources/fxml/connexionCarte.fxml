@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="fenetre" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#declancherBoutton" prefHeight="700.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ConnexionCarte">
+   <children>
+      <TextField fx:id="identifiant" layoutX="607.0" layoutY="233.0" prefHeight="29.0" prefWidth="250.0" />
+      <PasswordField fx:id="mdp" layoutX="607.0" layoutY="285.0" prefHeight="29.0" prefWidth="250.0" />
+      <TextField fx:id="textFieldCom" layoutX="662.0" layoutY="340.0" prefHeight="29.0" prefWidth="37.0" />
+      <Circle fill="#00ae4e" layoutX="568.0" layoutY="655.0" opacity="0.5" radius="3.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#00ae4e" layoutX="553.0" layoutY="655.0" opacity="0.5" radius="3.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#00ae4e" layoutX="538.0" layoutY="655.0" opacity="0.5" radius="3.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#00ae4e" layoutX="583.0" layoutY="655.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#00ae4e" layoutX="598.0" layoutY="655.0" opacity="0.5" radius="3.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#00ae4e" layoutX="612.0" layoutY="655.0" opacity="0.5" radius="3.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button disable="true" layoutX="587.0" layoutY="667.0" maxHeight="25.0" maxWidth="50.0" minHeight="25.0" minWidth="50.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0">
+         <styleClass>
+            <String fx:value="arrow" />
+            <String fx:value="right" />
+         </styleClass></Button>
+      <Button fx:id="bouttonGauche" layoutX="513.0" layoutY="667.0" maxHeight="25.0" maxWidth="50.0" minHeight="25.0" minWidth="50.0" onAction="#stagePrecedent" prefHeight="25.0" prefWidth="32.0" rotate="180.0">
+         <styleClass>
+            <String fx:value="arrow" />
+            <String fx:value="left" />
+         </styleClass></Button>
+      <Label layoutX="456.0" layoutY="45.0" text="Connexion à la carte" textAlignment="CENTER" textFill="#546472">
+         <font>
+            <Font name="Open Sans Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="293.0" layoutY="230.0" text="Identifiant                                 :" textFill="#546472">
+         <font>
+            <Font name="Open Sans Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="293.0" layoutY="285.0" text="Mot de passe                           :" textFill="#546472">
+         <font>
+            <Font name="Open Sans Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="398.0" layoutY="239.0" />
+      <Button fx:id="btnConnexion" layoutX="528.0" layoutY="394.0" mnemonicParsing="false" onAction="#connexion" text="Connexion" />
+      <Label fx:id="labelErreur" alignment="CENTER" contentDisplay="CENTER" layoutX="420.0" layoutY="435.0" text="Identifiant ou mot de passe incorrect&#10;ou l'application n'arrive pas à comuniquer avec la carte." textAlignment="CENTER" textFill="RED" visible="false" />
+      <ProgressIndicator fx:id="progress" layoutX="641.0" layoutY="394.0" prefHeight="31.0" prefWidth="25.0" visible="false" />
+      <Label layoutX="293.0" layoutY="340.0" text="Numéro du port COM            :" textFill="#546472">
+         <font>
+            <Font name="Open Sans Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="607.0" layoutY="340.0" text="COM" textFill="#546472">
+         <font>
+            <Font name="Open Sans Regular" size="20.0" />
+         </font>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@../css/arrowbutton.css" />
+      <URL value="@../css/choixCarte.css" />
+   </stylesheets>
+</Pane>

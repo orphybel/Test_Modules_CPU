@@ -1,0 +1,57 @@
+<Module numero="X130360306" designation="HUBVIEW-CPU-Maitre-Module-M12" pathModelePv="../pv/maitrem12.docx" type="Hub">
+    <DisqueSatas>
+        <DisqueSata nom="Disque SATA 1" lettre="a" numero="1"/>
+        <DisqueSata nom="Disque SATA 2" lettre="b" numero="2"/>
+    </DisqueSatas>
+    <PortEthernets>
+        <PortEthernet nom="RJ45 J20 carte FDP" numero="1"/>
+        <PortEthernet nom="M12 en face avant" popUp="/images/ledsM12.jpg" text="LED D63 allumée\n;LED D60 clignotante" numero="2"/>
+        <PortEthernet nom="RJ45 J19 carte FDP" numero="3" />
+    </PortEthernets>
+    <EnssembleLeds>
+        <EnssembleLed nom="Leds rouges" popUp="/images/led2.jpg" text="LED Signe de vie : Allumée Verte\n;LED Alarme : Allumée Rouge\nLED Caméra : Allumée Rouge\n;LED MemView : Allumée rouge ou orange">
+            <Led nom="LED_HEARTBEAT"/>
+            <Led nom="LED_ALARME_ROUGE"/>
+            <Led nom="LED_CAMERA_ROUGE"/>
+            <Led nom="LED_ALARME_MSA"/>
+            <Led nom="LED_POWER_SEQ"/>
+        </EnssembleLed>
+        <EnssembleLed nom="Leds vertes" popUp="/images/led1.jpg" text="LED Signe de vie : Allumée Verte\n LED Alerte : Allumée Rouge\n LED Caméra : Allumée Rouge\n LED Alerte MSA : Allumée Rouge\n">
+            <Led nom="LED_ALARME_VERT"/>
+            <Led nom="LED_HEARTBEAT"/>
+            <Led nom="LED_CAMERA_VERT"/>
+            <Led nom="LED_POWER_SEQ"/>
+        </EnssembleLed>
+        <EnssembleLed nom="Leds Off" popUp="/images/led3.png" text="LED Signe de vie : Eteinte\n;LED Alarme : Eteinte\n;LED Caméra : Eteinte\nLED MemView : Allumée Verte ou éteinte"/>
+    </EnssembleLeds>
+    <EnssembleLedsAuto>
+        <EnssembleLedAuto>
+            <Led nom="LED_POWER_SEQ"/>
+            <Led nom="CMD_POWER_RECORDER"/>
+        </EnssembleLedAuto>
+    </EnssembleLedsAuto>
+    <Switchs>
+        <!-- ATTENTION : les numéros sur les switchs on a la
+        fois une correspondance avec les modèles de pv mais également
+        avec des numéros dans un programme en c.
+         -->
+        <Switch nom="PRESENCE_V_BKP" numero="11"/>
+        <Switch nom="PRESENCE_12V_MSA" numero="8"/>
+        <Switch nom="PRESENCE_12V" numero="9"/>
+        <Switch nom="COM_ROT1_P1" numero="21"/>
+        <Switch nom="COM_ROT1_P2" numero="22"/>
+        <Switch nom="COM_ROT2_P1" numero="24"/>
+        <Switch nom="COM_ROT2_P2" numero="25"/>
+        <Switch nom="CFG_MSA11_0" numero="1"/>
+        <Switch nom="CFG_MSA11_1" numero="0"/>
+        <Switch nom="CFG_MSA12_0" numero="13"/>
+        <Switch nom="CFG_MSA12_1" numero="12"/>
+        <Switch nom="CFG_MSA21_0" numero="5"/>
+        <Switch nom="CFG_MSA21_1" numero="4"/>
+        <Switch nom="CFG_MSA22_0" numero="3"/>
+        <Switch nom="CFG_MSA22_1" numero="2"/>
+        <Switch nom="PRESENCE_CPU_E" numero="14"/>
+        <Switch nom="PRESENCE_CPU_VIDEO" numero="15"/>
+        <Switch nom="SLOT_M_OU_E" numero="10"/>
+    </Switchs>
+</Module>

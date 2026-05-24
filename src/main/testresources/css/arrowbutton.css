@@ -1,0 +1,48 @@
+.arrow {
+	-fx-shape: "M 0 0 H 0 V 2 H 1 V 3 L 3 1 L 1 -1 V 0 H 0 Z";
+	-fx-display: inline-block;
+	-fx-border: none;
+	-fx-background-color: #546472;
+}
+
+.left:hover {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, -2, -2);
+}
+
+.left:pressed {
+	-fx-translate-y: 2px;
+	-fx-translate-x: -2px;
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 0, 0, 0, 0);
+}
+
+.right:hover {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 2, 2);
+}
+
+.right:pressed {
+	-fx-translate-y: 2px;
+	-fx-translate-x: 2px;
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 0, 0, 0, 0);
+}
+
+.label {
+	-fx-font-size: 15px;
+	-fx-text-fill: #546472;
+	-fx-font-weight: bold;
+	-fx-font-family: "Segoe UI";
+	-fx-padding: 0 5 0 5;
+}
+
+.btnTest {
+	-fx-pref-height: 150px;
+	-fx-pref-width: 150px;
+
+}
+
+
+.progress {
+	-fx-pref-height: 148px;
+	-fx-pref-width: 169px;
+	-fx-color: #2AA5FF;
+	-fx-background-radius: 60px;
+}

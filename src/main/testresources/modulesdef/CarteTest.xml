@@ -1,0 +1,17 @@
+<Module numero="X130379150" designation="SE-TVE-TAV-CPU Bloc Enfichable CPU" pathModelePv="../pv/tvetav.docx" type="Tav">
+    <DisqueSatas>
+    </DisqueSatas>
+    <PortEthernets>
+        <PortEthernet nom="RJ45 J20 carte FDP" numero="1"/>
+        <PortEthernet nom="RJ45 en face avant" popUp="/images/ledsRJ45.jpg" text="LED verte allumée\n;LED jaune clignotante" numero="2"/>
+    </PortEthernets>
+    <EnssembleLeds>
+
+    </EnssembleLeds>
+    <EnssembleLedsAuto>
+
+    </EnssembleLedsAuto>
+    <Switchs>
+
+    </Switchs>
+</Module>

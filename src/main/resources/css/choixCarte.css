@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'Open Sans';
+	src:url('../OpenSans-Regular.ttf');
+}
+
+.label {
+	-fx-font-family: 'Open Sans', sans-serif;
+}
+
+.button {
+	-fx-display: inline-block;
+	-fx-border: none;
+	-fx-background-color: #546472;
+	-fx-font-family: 'Open Sans', sans-serif;
+	-fx-font-weight: bold;
+	-fx-font-size: 15px;
+	-fx-text-fill: white;
+	-fx-text-alignment: center;
+	-fx-content-display: center;
+}
+
+.button:hover {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 4, 4);
+}
+
+.button:pressed {
+	-fx-translate-y: 4px;
+	-fx-translate-x: 4px;
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 0, 0, 0, 0);
+}

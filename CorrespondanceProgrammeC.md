@@ -1,0 +1,30 @@
+sbit S1_2 = P2^0;
+sbit S1_1 = P2^1;
+sbit S2_2 = P2^6;
+sbit S2_1 = P2^7;
+sbit S3_2 = P2^4;
+sbit S3_1 = P2^5;
+sbit S4_2 = P2^5; // A changer
+sbit S4_1 = P2^5; // A changer
+sbit S5_2 = P5^2;
+sbit S5_1 = P5^3;
+sbit S6_2 = P5^4;
+sbit S6_1 = P3^6;
+sbit S7_2 = P2^2;
+sbit S7_1 = P2^3;
+sbit S8_2 = P3^0;
+sbit S8_1 = P3^1;
+sbit S9_2 = P3^2;
+sbit S9_1 = P3^3;
+sbit S10_2 = P3^4;
+sbit S10_1 = P3^5;
+sbit ROT1_1 = P4^0;
+sbit ROT1_2 = P4^1;
+sbit ROT1_3 = P4^2;
+sbit ROT2_1 = P4^3;
+sbit ROT2_2 = P4^4;
+sbit ROT2_3 = P4^5;
+
+/* D�claration des leds */
+sbit LED_D1 = P5^0;
+sbit LED_D4 = P5^1;

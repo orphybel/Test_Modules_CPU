@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ProgressIndicator?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="fenetre" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" stylesheets="@../css/arrowbutton.css" prefWidth="1150.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PageTest">
+   <children>
+      <Circle fill="#00ae4e" layoutX="568.0" layoutY="655.0" opacity="0.5" radius="3.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#00ae4e" layoutX="553.0" layoutY="655.0" opacity="0.5" radius="3.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#00ae4e" layoutX="538.0" layoutY="655.0" opacity="0.5" radius="3.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#00ae4e" layoutX="583.0" layoutY="655.0" opacity="0.5" radius="3.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#00ae4e" layoutX="598.0" layoutY="655.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#00ae4e" layoutX="612.0" layoutY="655.0" opacity="0.5" radius="3.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="bouttonDroite" layoutX="587.0" layoutY="667.0" maxHeight="25.0" maxWidth="50.0" minHeight="25.0" minWidth="50.0" mnemonicParsing="false" onAction="#stageSuivant" prefHeight="25.0" prefWidth="50.0">
+         <styleClass>
+            <String fx:value="arrow" />
+            <String fx:value="right" />
+         </styleClass></Button>
+      <Button fx:id="bouttonGauche" layoutX="513.0" layoutY="667.0" maxHeight="25.0" maxWidth="50.0" minHeight="25.0" minWidth="50.0" onAction="#stagePrecedent" prefHeight="25.0" prefWidth="32.0" rotate="180.0">
+         <styleClass>
+            <String fx:value="arrow" />
+            <String fx:value="left" />
+         </styleClass></Button>
+      <Label layoutX="495.0" layoutY="45.0" text="Tests Unitaires" textFill="#546472">
+         <font>
+            <Font name="Open Sans Regular" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="scroll" layoutX="53.0" layoutY="83.0" prefHeight="525.0" prefWidth="1060.0">
+        <content>
+
+        </content>
+      </ScrollPane>
+      <Button fx:id="bouttonTous" layoutX="60.0" layoutY="614.0" mnemonicParsing="false" onAction="#testTous" text="Lancer tous les tests" />
+   </children>
+   <stylesheets>
+      <URL value="@../css/arrowbutton.css" />
+      <URL value="@../css/choixCarte.css" />
+   </stylesheets>
+</Pane>
